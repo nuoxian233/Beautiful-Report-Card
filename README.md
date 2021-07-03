@@ -14,6 +14,7 @@
 ## 功能特色
 * 精美的页面
 * 随机动漫图片
+* 不自适应手机
 * 似乎没有什么特色了
 ## 安装方法
 1. 需安装PHP环境，并确保支持MYSQL5.6+
@@ -26,3 +27,6 @@
 * QQ：1428309052
 * QQ群：445202136
 ## Ref
+* 网站图标：https://www.iconfont.cn/collections/detail?cid=18409
+* 前台svg：https://www.iconfont.cn/collections/detail?cid=1245
+* 后台svg：https://www.iconfont.cn/collections/detail?cid=19892
