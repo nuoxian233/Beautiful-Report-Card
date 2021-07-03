@@ -9,6 +9,8 @@
 
 ## 学生电子成绩单
 使用HTML+PHP+MYSQL开发的学生电子成绩单，输入学号和身份证号即可查询信息，欢迎体验。
+![](https://ftp.bmp.ovh/imgs/2021/07/0e3090b71f3b841d.png)
+![](https://ftp.bmp.ovh/imgs/2021/07/a0c35f4ce900148d.png)
 ## 功能特色
 ## 安装方法
 ## 联系作者
