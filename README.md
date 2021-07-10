@@ -24,7 +24,19 @@
 4. 修改`result.php`的数据库信息
 5. 访问站点`http://IP/index.html`
 ## 目录结构
-
+```
+学生电子成绩查询系统
+│   README.md
+|   favicon.ico
+│   index.html
+|   index.php
+│
+└───css
+│   │   nuoxian.css
+│
+└───sql
+    │   result.sql
+```
 ## 联系作者
 * Blog：https://nxvav.cn/
 * QQ：1428309052
