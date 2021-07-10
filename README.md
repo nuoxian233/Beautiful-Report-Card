@@ -25,7 +25,7 @@
 5. 访问站点`http://IP/index.html`
 ## 目录结构
 ```
-web
+WEB
 ├─css                CSS样式目录
 │  └─nuoxian.css     样式文件
 │
@@ -35,7 +35,7 @@ web
 ├──README.md         描述文件
 ├──favicon.ico       图标文件
 ├──index.html        首页文件
-├──index.php         查询文件
+└──index.php         查询文件
 ```
 ## 联系作者
 * Blog：https://nxvav.cn/
