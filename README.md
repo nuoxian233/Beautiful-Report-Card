@@ -13,6 +13,7 @@
 ![](https://ftp.bmp.ovh/imgs/2021/07/0e3090b71f3b841d.png)
 ![](https://ftp.bmp.ovh/imgs/2021/07/a0c35f4ce900148d.png)
 ## 功能特色
+### 没打勾的说明正在施工中~
 - [x] 精美的页面
 - [ ] 随机动漫图片
 - [ ] 自适应页面
