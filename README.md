@@ -28,7 +28,7 @@
 ## 安装方法
 1. 需安装PHP环境，并确保支持MYSQL5.6+
 2. 下载源码解压到站点根目录
-3. 将`index.html`设置为默认优先首页
+3. 将`index.html`设置为优先首页
 4. 导入`sql/result.sql`至MYSQL
 5. 修改`index.php`的数据库信息
 6. 访问站点`http://IP/index.html`
