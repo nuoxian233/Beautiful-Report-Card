@@ -26,16 +26,16 @@
 ## 目录结构
 ```
 web
-│   README.md
-|   favicon.ico
-│   index.html
-|   index.php
+├─css                CSS样式目录
+│  └─nuoxian.css     样式文件
 │
-└───css
-│   │   nuoxian.css
+├─sql                数据库目录
+│  └─result.sql      数据库文件
 │
-└───sql
-    │   result.sql
+├──README.md         描述文件
+├──favicon.ico       图标文件
+├──index.html        首页文件
+├──index.php         查询文件
 ```
 ## 联系作者
 * Blog：https://nxvav.cn/
