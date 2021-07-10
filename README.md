@@ -25,7 +25,7 @@
 5. 访问站点`http://IP/index.html`
 ## 目录结构
 ```
-学生电子成绩查询系统
+web
 │   README.md
 |   favicon.ico
 │   index.html
