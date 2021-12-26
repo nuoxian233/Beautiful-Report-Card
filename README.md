@@ -42,7 +42,7 @@ WEB
 │
 ├──README.md         描述文件
 ├──favicon.ico       图标文件
-└──config.php         数据库配置文件
+└──config.php        数据库配置文件
 └──index.php         首页文件
 ```
 ## 联系作者
