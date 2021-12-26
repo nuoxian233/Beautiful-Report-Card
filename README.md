@@ -28,10 +28,9 @@
 ## 安装方法
 1. 需安装PHP环境，并确保支持MYSQL5.6+
 2. 下载源码解压到站点根目录
-3. 将`index.html`设置为优先首页
-4. 导入`sql/result.sql`至MYSQL
-5. 修改`index.php`的数据库信息
-6. 访问站点`http://IP/index.html`
+3. 导入`sql/result.sql`至MYSQL
+4. 修改`config.php`的数据库配置信息
+5. 访问站点`http://IP/index.php`
 ## 目录结构
 ```
 WEB
@@ -43,8 +42,8 @@ WEB
 │
 ├──README.md         描述文件
 ├──favicon.ico       图标文件
-├──index.html        首页文件
-└──index.php         查询文件
+└──config.php         数据库配置文件
+└──index.php         首页文件
 ```
 ## 联系作者
 * Blog：https://nxvav.cn/
