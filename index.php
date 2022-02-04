@@ -22,7 +22,7 @@
 </head>
 
 <?php
-if (!isset($_POST['GO'])) {
+if (!isset($_POST['start'])) {
 
 ?>
 
@@ -49,7 +49,7 @@ if (!isset($_POST['GO'])) {
 				</label>
 			</div>
 			<div class="enterBut">
-			<input name="GO" type="submit" value="查询"/>
+			<input name="start" type="submit" value="查询"/>
 			</div>
 			<div class="copyright">
 				<p>&copy;<script>document.write(new Date().getFullYear())</script> <a href="https://nuoxiana.cn" target="_blank">nuoxian</a>. All Rights Reserved.</p>
@@ -62,15 +62,20 @@ if (!isset($_POST['GO'])) {
 	} else {
 		include "config.php";
 
+		$return = NULL;
 		$stuid_api = $_POST['stuid'];
 		$id_api = $_POST['id'];
-		
+
 		if(empty($stuid_api)) {
 			echo "<script>alert('请输入 考生号/准考证号 后再试！');location.href='".$_SERVER["HTTP_REFERER"]."';</script>";
 		} elseif(empty($id_api)) {
 			echo "<script>alert('请输入 身份证号后四位 后再试！');location.href='".$_SERVER["HTTP_REFERER"]."';</script>";
 		} else {
 			$link = @mysqli_connect($host,$username,$password,$dbname,$port);
+
+			if (!$link) {
+				die ("<script>alert('数据库连接失败，请检查配置文件！');location.href='".$_SERVER["HTTP_REFERER"]."';</script>");
+			}
 		}
 		
 		if($link) {
@@ -82,15 +87,15 @@ if (!isset($_POST['GO'])) {
 				
 				$stuid = $row["stuid"];
 				$name = $row["name"];
-				$chinese = $row["chinese"];
-				$mathematics = $row["mathematics"];
-				$english = $row["english"];
-				$politics = $row["politics"];
-				$history = $row["history"];
-				$geography = $row["geography"];
-				$physics = $row["physics"];
-				$chemistry = $row["chemistry"];
-				$biology = $row["biology"];
+				$text1 = $row["custom_text1"];
+				$text2 = $row["custom_text2"];
+				$text3 = $row["custom_text3"];
+				$text4 = $row["custom_text4"];
+				$text5 = $row["custom_text5"];
+				$text6 = $row["custom_text6"];
+				$text7 = $row["custom_text7"];
+				$text8 = $row["custom_text8"];
+				$text9 = $row["custom_text9"];
 			} elseif($return = NULL) {
 				echo "<script>alert('查询的学生信息不存在！');history.back();</script>";
 			}
@@ -104,30 +109,30 @@ if (!isset($_POST['GO'])) {
 		echo "	<table border=\"0\" align=\"center\">\n";
 		echo "		<tbody>\n";
 		echo "			<tr>\n";
-		echo "				<td>学号</td>\n";
-		echo "				<td>姓名</td>\n";
-		echo "				<td>语文</td>\n";
-		echo "				<td>数学</td>\n";
-		echo "				<td>英语</td>\n";
-		echo "				<td>政治</td>\n";
-		echo "				<td>历史</td>\n";
-		echo "				<td>地理</td>\n";
-		echo "				<td>物理</td>\n";
-		echo "				<td>化学</td>\n";
-		echo "				<td>生物</td>\n";
+		echo "				<td>$Custom_text1</td>\n";
+		echo "				<td>$Custom_text2</td>\n";
+		echo "				<td>$Custom_text3</td>\n";
+		echo "				<td>$Custom_text4</td>\n";
+		echo "				<td>$Custom_text5</td>\n";
+		echo "				<td>$Custom_text6</td>\n";
+		echo "				<td>$Custom_text7</td>\n";
+		echo "				<td>$Custom_text8</td>\n";
+		echo "				<td>$Custom_text9</td>\n";
+		echo "				<td>$Custom_text10</td>\n";
+		echo "				<td>$Custom_text11</td>\n";
 		echo "			</tr>\n";
 		echo "			<tr>\n";
 		echo "				<td>$stuid</td>\n";
 		echo "				<td>$name</td>\n";
-		echo "				<td>$chinese</td>\n";
-		echo "				<td>$mathematics</td>\n";
-		echo "				<td>$english</td>\n";
-		echo "				<td>$politics</td>\n";
-		echo "				<td>$history</td>\n";
-		echo "				<td>$geography</td>\n";
-		echo "				<td>$physics</td>\n";
-		echo "				<td>$chemistry</td>\n";
-		echo "				<td>$biology</td>\n";
+		echo "				<td>$text1</td>\n";
+		echo "				<td>$text2</td>\n";
+		echo "				<td>$text3</td>\n";
+		echo "				<td>$text4</td>\n";
+		echo "				<td>$text5</td>\n";
+		echo "				<td>$text6</td>\n";
+		echo "				<td>$text7</td>\n";
+		echo "				<td>$text8</td>\n";
+		echo "				<td>$text9</td>\n";
 		echo "			</tr>\n";
 		echo "		</tbody>\n";
 		echo "	</table>\n";
