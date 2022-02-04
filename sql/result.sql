@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
--- https://www.phpmyadmin.net/
+-- version 4.4.15.10
+-- https://www.phpmyadmin.net
 --
--- 主机： localhost
--- 生成日期： 2021-07-04 06:06:44
+-- Host: localhost
+-- Generation Time: 2022-02-04 13:01:15
 -- 服务器版本： 5.6.50-log
--- PHP 版本： 7.3.28
+-- PHP Version: 5.6.40
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -18,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- 数据库： `cf_11na_cn`
+-- Database: `cf`
 --
 
 -- --------------------------------------------------------
@@ -27,39 +26,38 @@ SET time_zone = "+00:00";
 -- 表的结构 `result`
 --
 
-CREATE TABLE `result` (
+CREATE TABLE IF NOT EXISTS `result` (
   `stuid` bigint(20) NOT NULL COMMENT '考生号/准考证号',
   `id` bigint(20) NOT NULL COMMENT '身份证号后四位',
   `name` varchar(14) NOT NULL COMMENT '姓名',
-  `chinese` varchar(14) NOT NULL COMMENT '语文',
-  `mathematics` varchar(14) NOT NULL COMMENT '数学',
-  `english` varchar(14) NOT NULL COMMENT '英语',
-  `politics` varchar(14) NOT NULL COMMENT '政治',
-  `history` varchar(14) NOT NULL COMMENT '历史',
-  `geography` varchar(14) NOT NULL COMMENT '地理',
-  `physics` varchar(14) NOT NULL COMMENT '物理',
-  `chemistry` varchar(14) NOT NULL COMMENT '化学',
-  `biology` varchar(14) NOT NULL COMMENT '生物'
+  `custom_text1` varchar(14) NOT NULL COMMENT '对应配置文件custom_text3',
+  `custom_text2` varchar(14) NOT NULL COMMENT '对应配置文件custom_text4',
+  `custom_text3` varchar(14) NOT NULL COMMENT '对应配置文件custom_text5',
+  `custom_text4` varchar(14) NOT NULL COMMENT '对应配置文件custom_text6',
+  `custom_text5` varchar(14) NOT NULL COMMENT '对应配置文件custom_text7',
+  `custom_text6` varchar(14) NOT NULL COMMENT '对应配置文件custom_text8',
+  `custom_text7` varchar(14) NOT NULL COMMENT '对应配置文件custom_text9',
+  `custom_text8` varchar(14) NOT NULL COMMENT '对应配置custom_text10',
+  `custom_text9` varchar(14) NOT NULL COMMENT '对应配置文件custom_text11'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `result`
 --
 
-INSERT INTO `result` (`stuid`, `id`, `name`, `chinese`, `mathematics`, `english`, `politics`, `history`, `geography`, `physics`, `chemistry`, `biology`) VALUES
+INSERT INTO `result` (`stuid`, `id`, `name`, `custom_text1`, `custom_text2`, `custom_text3`, `custom_text4`, `custom_text5`, `custom_text6`, `custom_text7`, `custom_text8`, `custom_text9`) VALUES
 (202101, 2333, '小明', '100', '100', '100', '100', '100', '100', '100', '100', '100'),
 (202102, 2333, '小红', '100', '100', '0', '0', '100', '100', '0', '0', '0');
 
 --
--- 转储表的索引
+-- Indexes for dumped tables
 --
 
 --
--- 表的索引 `result`
+-- Indexes for table `result`
 --
 ALTER TABLE `result`
   ADD PRIMARY KEY (`stuid`);
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
