@@ -64,7 +64,6 @@ if (!isset($_POST['start'])) {
 			foreach ($array_illegal as $value) {
 				if (strstr($str, $value) !== false) {
 					echo "<script>alert('含有敏感词或字符，请重新输入！');location='./'</script>";
-					exit;
 					return true;
 				}
 			}
