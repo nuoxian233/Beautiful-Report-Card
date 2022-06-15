@@ -10,7 +10,10 @@
 ## 学生电子成绩查询系统
 使用HTML+PHP+MYSQL开发的学生电子成绩查询系统，输入学号和身份证号即可查询信息，欢迎体验。
 
+### 默认主题
 ![](https://ftp.bmp.ovh/imgs/2021/07/0e3090b71f3b841d.png)
+![](https://ftp.bmp.ovh/imgs/2021/07/a0c35f4ce900148d.png)
+### 微信主题
 ![](https://ftp.bmp.ovh/imgs/2021/07/a0c35f4ce900148d.png)
 ## 全部功能
 ##### 没打勾的说明正在施工(实现)中~
@@ -22,13 +25,15 @@
 - [x] 参数过滤
 - [x] 可更换壁纸
 - [x] 自定义科目
+- [x] 自定义主题
 - [ ] 图形验证码
 - [ ] 管理成绩后台
 ## 程序好处
 * 无需奔波，手机即可查看
 * 电子成绩单，查看更方便
+* 多种成绩单样式，提高美观程度
 ## 安装方法
-1. 需安装PHP、SQL环境，并确保支持MYSQL5.6+
+1. 需安装PHP环境，并确保支持MYSQL5.6+ UTF-8编码
 2. 下载源码解压到站点根目录
 3. 导入`sql/result.sql`至MYSQL
 4. 修改`config.php`的数据库配置信息
@@ -37,17 +42,24 @@
 ```
 WEB
 |
-├─assets             资源目录
-│  └─css             样式目录
-│     └─nuoxian.css  主页样式文件
+├─themes               主题目录
+│  └─default           默认主题
+│     └─assets         样式目录
+│       └─css          css目录
+│         └─style.css  主题样式
+│     └─index.php      主页文件
+|
+│  └─concise           微信主题
+│     └─index.php      主页文件
+│     └─style.css      样式文件
 │
-├─sql                数据库目录
-│  └─result.sql      数据库文件
+├─sql                  数据库目录
+│  └─result.sql        数据库文件
 │
-├──README.md         描述文件
-├──favicon.ico       图标文件
-└──config.php        配置文件
-└──index.php         首页文件
+├──README.md           描述文件
+├──favicon.ico         图标文件
+└──config.php          配置文件
+└──index.php           首页文件
 ```
 ## 联系作者
 * Blog：https://nxvav.cn/
