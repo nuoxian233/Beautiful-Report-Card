@@ -79,7 +79,6 @@ if (!isset($_POST['start'])) {
 
 			if (!$link) {
 				die ("<script>alert('数据库连接失败，请检查配置文件！');location='./';</script>");
-				exit;
 			}
 		}
 		
