@@ -14,7 +14,7 @@
 ![](https://ftp.bmp.ovh/imgs/2021/07/0e3090b71f3b841d.png)
 ![](https://ftp.bmp.ovh/imgs/2021/07/a0c35f4ce900148d.png)
 ### 微信主题
-![](https://ftp.bmp.ovh/imgs/2021/07/a0c35f4ce900148d.png)
+![](https://s3.bmp.ovh/imgs/2022/06/15/760e80d0669205f5.jpg)
 ## 全部功能
 ##### 没打勾的说明正在施工(实现)中~
 - [x] 精美的页面
