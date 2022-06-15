@@ -6,7 +6,7 @@
     $SQLtable = 'result'; // 选择查询的数据库表名，一般不动
 	$port = 3306; // 数据库地址端口，一般是3306
 
-	$themes = "default"; // 引用的主题目录，在themes可以看到，默认default
+	$themes = "default"; // 引用的主题目录，在themes可以看到，默认default，还有一个concise主题
 	
 	// 查询后的文本，可自定义
 	$Custom_text1 = "学号"; // 建议保持默认
