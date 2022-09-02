@@ -28,7 +28,7 @@
     <div class="mdui-toolbar mdui-color-black">
         <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#menu'}"><i class="mdui-icon material-icons">menu</i></a>
         <ul class="mdui-menu mdui-menu-cascade" id="menu">
-            <li class="mdui-menu-item">
+            <li class="mdui-menu-item ">
                 <a href="./query.php" class="mdui-ripple">
                     <i class="mdui-menu-item-icon mdui-icon material-icons">face</i>
                     查询学生信息
@@ -60,28 +60,28 @@
         </div>
         <h4 style="margin: 30px auto">系统信息</h4>
     </div>
-        <ul class="mdui-list mdui-center mdui-shadow-3 mdui-center">
-            <li class="mdui-list-item mdui-ripple">
-                <i class="mdui-list-item-icon mdui-icon material-icons">info</i>&nbsp;
-                学生电子成绩管理系统程序版本
-                <div class="mdui-list-item-content">Ver 0.0.7 UTF-8</div>
-            </li>
-            <li class="mdui-list-item mdui-ripple">
-                <i class="mdui-list-item-icon mdui-icon material-icons">cloud</i>&nbsp;
-                学生电子成绩管理系统最新版本
-                <div class="mdui-list-item-content">Ver 9.9.9 UTF-8</div>
-            </li>
-            <li class="mdui-list-item mdui-ripple">
-                <i class="mdui-list-item-icon mdui-icon material-icons">public</i>&nbsp;
-                当前服务器PHP版本
-                <div class="mdui-list-item-content"><?php echo substr(PHP_VERSION,0,3); ?></div>
-            </li>
-            <li class="mdui-list-item mdui-ripple">
-                <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart</i>&nbsp;
-                服务器 MYSQL 版本
-                <div class="mdui-list-item-content"><?php $link = @mysqli_connect($host,$username,$password,$dbname,$port); printf(substr($link -> server_info,0,3)); ?></div>
-            </li>
-        </ul>
+            <ul class="mdui-list mdui-shadow-3" style="margin-left: 680px !important;margin-right: 680px !important;">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">info</i>&nbsp;
+                    学生电子成绩管理系统程序版本
+                    <div class="mdui-list-item-content mdui-text-right">Ver 0.0.7 UTF-8</div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">cloud</i>&nbsp;
+                    学生电子成绩管理系统最新版本
+                    <div class="mdui-list-item-content mdui-text-right">Ver 9.9.9 UTF-8</div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">public</i>&nbsp;
+                    服务器 PHP 版本
+                    <div class="mdui-list-item-content mdui-text-right"><?php echo substr(PHP_VERSION,0,3); ?></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">pie_chart</i>&nbsp;
+                    服务器 MYSQL 版本
+                    <div class="mdui-list-item-content mdui-text-right"><?php $link = @mysqli_connect($host,$username,$password,$dbname,$port); printf(substr($link -> server_info,0,3)); ?></div>
+                </li>
+            </ul>
     <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/js/mdui.min.js" type="application/javascript"></script>
 </body>
 </html>
