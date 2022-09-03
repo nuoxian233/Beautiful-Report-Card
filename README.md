@@ -11,10 +11,10 @@
 【学习项目】使用PHP+MYSQL开发的学生电子成绩查询系统，输入学号和身份证号即可查询信息，欢迎体验。
 
 ### 默认主题
-![](https://s1.ax1x.com/2022/09/03/vo81yj.png)
-![](https://s1.ax1x.com/2022/09/03/vo8llQ.png)
+![](https://s1.328888.xyz/2022/09/03/1Dvpr.png)
+![](https://s1.328888.xyz/2022/09/03/1Ddsj.png)
 ### 微信主题
-![](https://s1.ax1x.com/2022/09/03/vo8Gmn.png)
+![](https://s1.328888.xyz/2022/09/03/1DWTI.png)
 ## 全部功能
 ##### 没打勾的说明正在施工(实现)中~
 - [x] 精美的页面
@@ -44,25 +44,36 @@
 ## 目录结构
 ```
 WEB
+├─admin
+|  └─function                 功能目录
+|     └─action                请求目录
+|       └─Add.php             添加成绩文件
+|       └─Get_latest.ph       检测更新文件
+|     └─about.php             后台关于页面
+|     └─index.php             后台跳转页面
+|     └─query.php             学生信息页面
+|  └─index.php                后台跳转页面
+|  └─login.php                后台登录页面
+|  └─logout.php               后台退出页面
 |
-├─themes               主题目录
-│  └─default           默认主题
-│     └─assets         样式目录
-│       └─css          css目录
-│         └─style.css  主题样式
-│     └─index.php      主页文件
+├─themes                      主题目录
+│  └─default                  默认主题
+│     └─assets                样式目录
+│       └─css                 css目录
+│         └─style.css         主题样式
+│     └─index.php             主页文件
 |
-│  └─concise           微信主题
-│     └─index.php      主页文件
-│     └─style.css      样式文件
+│  └─concise                  微信主题
+│     └─index.php             主页文件
+│     └─style.css             样式文件
 │
-├─sql                  数据库目录
-│  └─result.sql        数据库文件
+├─sql                         数据库目录
+│  └─result.sql               数据库文件
 │
-├──README.md           描述文件
-├──favicon.ico         图标文件
-└──config.php          配置文件
-└──index.php           首页文件
+├──README.md                  描述文件
+├──favicon.ico                图标文件
+└──config.php                 配置文件
+└──index.php                  首页文件
 ```
 ## 联系作者
 * Blog：https://nxvav.cn/
