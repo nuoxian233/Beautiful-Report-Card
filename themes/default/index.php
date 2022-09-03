@@ -50,7 +50,7 @@ if (!isset($_POST['start'])) {
 
 <?php
 	} else {
-		include "../../config.php";
+		include "./../../config.php";
 
 		$number_api = $_POST['number']; // 获取post过来的内容并存入变量
 		$id_api = $_POST['id']; // 获取post过来的内容并存入变量

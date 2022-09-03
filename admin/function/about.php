@@ -1,9 +1,9 @@
 <?php
-    include "../../config.php";
+    include "./../../config.php";
     include "./action/Get_latest.php";
 
     // 判断是否存在cookie且符合密码
-    if (isset($_COOKIE['cookie']) && $_COOKIE['cookie'] === md5($admin_password)) {
+    if ($_COOKIE['cookie'] === md5($admin_password)) {
         
     } else {
         header("Location: ../login.php");

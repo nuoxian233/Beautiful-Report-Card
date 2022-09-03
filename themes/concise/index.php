@@ -40,7 +40,7 @@
 	
     <?php
         } else {
-            include "../../config.php";
+            include "./../../config.php";
 
             $number_api = $_POST['number'];
             $id_api = $_POST['id'];
