@@ -11,10 +11,10 @@
 【学习项目】使用PHP+MYSQL开发的学生电子成绩查询系统，输入学号和身份证号即可查询信息，欢迎体验。
 
 ### 默认主题
-![](https://ftp.bmp.ovh/imgs/2021/07/0e3090b71f3b841d.png)
-![](https://ftp.bmp.ovh/imgs/2021/07/a0c35f4ce900148d.png)
+![](https://s1.ax1x.com/2022/09/03/vo81yj.png)
+![](https://s1.ax1x.com/2022/09/03/vo8llQ.png)
 ### 微信主题
-![](https://s3.bmp.ovh/imgs/2022/06/15/760e80d0669205f5.jpg)
+![](https://s1.ax1x.com/2022/09/03/vo8Gmn.png)
 ## 全部功能
 ##### 没打勾的说明正在施工(实现)中~
 - [x] 精美的页面
@@ -72,3 +72,4 @@ WEB
 * 网站图标：https://www.iconfont.cn/collections/detail?cid=18409
 * 前台svg：https://www.iconfont.cn/collections/detail?cid=1245
 * 后台svg：https://www.iconfont.cn/collections/detail?cid=19892
+* mdui前端框架：https://www.mdui.org/
