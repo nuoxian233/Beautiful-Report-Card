@@ -1,10 +1,9 @@
 <?php
-    include "./../../config.php";
-    include "./action/Get_latest.php";
+    require "./../../config.php";
 
     // 判断是否存在cookie且符合密码
     if ($_COOKIE['cookie'] === md5($admin_password)) {
-        
+        require "./action/Get_latest.php";
     } else {
         header("Location: ../login.php");
         exit();
@@ -62,16 +61,17 @@
         <h4 class="mdui-center">系统信息</h4>
         <div class="mdui-dialog" id="Update_content">
             <div class="mdui-dialog-content">
-                <div class="mdui-dialog-title">更新日期（<?php echo $data['update_time']; ?>）</div>
-                <p class="mdui-text-left"><?php echo $data['update_content']; ?></p>
+                <div class="mdui-dialog-title">更新日期 (<?php echo $data['update_time']; ?>)</div>
+                <p class="mdui-text-left"><?php echo str_replace("\r\n", "<br>", $data['update_content']); ?></p>
             </div>
             <div class="mdui-dialog-actions">
+                <button class="mdui-btn mdui-ripple mdui-text-color-black" onclick="window.location.href='<?php echo $data['download']; ?>'">前往更新</button>
                 <button class="mdui-btn mdui-ripple mdui-text-color-black" mdui-dialog-close>确定</button>
             </div>
         </div>
         <div class="mdui-p-b-3">
-            <button class="mdui-btn mdui-btn-raised mdui-ripple" οnclick=""><i class="mdui-icon material-icons">&#xe7fd;</i>作者网站</button>
-            <button class="mdui-btn mdui-btn-raised mdui-ripple"><i class="mdui-icon material-icons">&#xe838;</i>项目主页</button>
+            <button class="mdui-btn mdui-btn-raised mdui-ripple" onclick="window.location.href='https:\/\/nuoxiana.cn\/'"><i class="mdui-icon material-icons">&#xe7fd;</i>作者网站</button>
+            <button class="mdui-btn mdui-btn-raised mdui-ripple" onclick="window.location.href='https:\/\/github.com/nuoxianCN/Beautiful-Report-Card'"><i class="mdui-icon material-icons">&#xe838;</i>项目主页</button>
             <button class="mdui-btn mdui-btn-raised mdui-ripple" mdui-dialog="{target: '#Update_content'}"><i class="mdui-icon material-icons">&#xe41a;</i>更新日志</button>
         </div>
     </div>
@@ -79,12 +79,12 @@
             <li class="mdui-list-item mdui-ripple">
                 <i class="mdui-icon material-icons">&#xe322;</i>&nbsp;
                 学生电子成绩管理系统当前版本
-                <div class="mdui-list-item-content mdui-text-right">Ver 0.0.7 UTF-8</div>
+                <div class="mdui-list-item-content mdui-text-right">Ver <?php echo $Program_version; ?></div>
             </li>
             <li class="mdui-list-item mdui-ripple">
                 <i class="mdui-icon material-icons">&#xe2bd;</i>&nbsp;
                 学生电子成绩管理系统最新版本
-                <div class="mdui-list-item-content mdui-text-right">Ver <?php echo $data['latest_version'] ?> UTF-8</div>
+                <div class="mdui-list-item-content mdui-text-right">Ver <?php echo $data['latest_version'] ?></div>
             </li>
             <li class="mdui-list-item mdui-ripple">
             <i class="mdui-icon material-icons">&#xe875;</i>&nbsp;

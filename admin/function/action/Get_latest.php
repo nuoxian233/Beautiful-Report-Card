@@ -26,13 +26,17 @@ if ($error = curl_error($curl)) {
     $data = curl_exec($curl);
     $data = json_decode($data, true);
 
+    date_default_timezone_set('PRC');
+    $date = strtotime($data['published_at']);
+    $date = date("Y-m-d H:i:s", $date);
+
     $json = array(
         'code' => 200,
         'node_id' => $data['node_id'],
         'latest_version' => $data['tag_name'],
         'publish_page' => $data['html_url'],
         'download' => $data['zipball_url'],
-        'update_time' => $data['published_at'],
+        'update_time' => $date,
         'update_content' => $data['body']
     );
 
