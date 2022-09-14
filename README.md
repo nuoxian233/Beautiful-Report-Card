@@ -1,7 +1,7 @@
 
 <div align="center">
-  [![](https://img.shields.io/github/repo-size/nuoxianCN/Beautiful-Report-Card)] "文件大小")
-  ![(https://img.shields.io/badge/Author-nuoxianCN-blueviolet "作者")](https://github.com/nuoxiancn/)
+  [![](https://img.shields.io/badge/Author-nuoxianCN-blueviolet "作者")](https://github.com/nuoxiancn/)
+  ![](https://img.shields.io/github/repo-size/nuoxianCN/Beautiful-Report-Card) "文件大小")
 </div>
 <p align="center">
   游客访问：
