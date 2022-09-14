@@ -2,9 +2,9 @@
 <p align="center">
   <a href="https://github.com/nuoxianCN"><img alt="作者" src="https://img.shields.io/badge/Author-nuoxianCN-blueviolet"></a>
   <a href="https://github.com/nuoxianCN/Beautiful-Report-Card"><img alt="文件大小" src="https://img.shields.io/github/repo-size/nuoxianCN/Beautiful-Report-Card"></a>
+  <a href="https://github.com/nuoxianCN/Beautiful-Report-Card/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/nuoxianCN/Beautiful-Report-Card"></a>
   <a href="https://github.com/nuoxianCN/Beautiful-Report-Card/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/nuoxianCN/Beautiful-Report-Card?style=social"></a>
   <a href="https://github.com/nuoxianCN/Beautiful-Report-Card/network/members"><img alt="Fork数量" src="https://img.shields.io/github/forks/nuoxianCN/Beautiful-Report-Card.svg?style=plastic"></a>
-  <a href="https://github.com/nuoxianCN/Beautiful-Report-Card/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/nuoxianCN/Beautiful-Report-Card"></a>
 </p>
 
 ## 学生电子成绩查询系统
