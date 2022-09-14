@@ -1,17 +1,16 @@
 
 <p align="center">
-  游客访问：
-  <img alt="" src="https://profile-counter.glitch.me/Beautiful-Report-Card/count.svg" />
   <a href="https://github.com/nuoxianCN"><img alt="作者" src="https://img.shields.io/badge/Author-nuoxianCN-blueviolet"></a>
-  <a href="https://github.com/nuoxianCN/Beautiful-Report-Card"><img alt="文件大小" src="ttps://img.shields.io/github/repo-size/nuoxianCN/Beautiful-Report-Card"></a>
-  <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/nuoxianCN/Beautiful-Report-Card/latest/total">
-  <a href="https://github.com/nuoxianCN/Beautiful-Report-Card/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/nuoxianCN/Beautiful-Report-Card"></a>
+  <a href="https://github.com/nuoxianCN/Beautiful-Report-Card"><img alt="文件大小" src="https://img.shields.io/github/repo-size/nuoxianCN/Beautiful-Report-Card"></a>
   <a href="https://github.com/nuoxianCN/Beautiful-Report-Card/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/nuoxianCN/Beautiful-Report-Card?style=social"></a>
+  <a href="https://github.com/nuoxianCN/Beautiful-Report-Card/network/members"><img alt="Fork数量" src="https://img.shields.io/github/forks/nuoxianCN/Beautiful-Report-Card.svg?style=plastic"></a>
+  <a href="https://github.com/nuoxianCN/Beautiful-Report-Card/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/nuoxianCN/Beautiful-Report-Card"></a>
 </p>
 
 ## 学生电子成绩查询系统
 【学习项目】使用PHP+MYSQL开发的学生电子成绩查询系统，输入学号和身份证号即可查询信息，欢迎体验。
-
+### 游客访问
+![](https://profile-counter.glitch.me/Beautiful-Report-Card/count.svg)
 ### 默认主题
 ![](https://s1.328888.xyz/2022/09/03/1Dvpr.png)
 ![](https://s1.328888.xyz/2022/09/03/1Ddsj.png)
