@@ -1,5 +1,7 @@
 
 <p align="center">
+  游客访问：
+  <img alt="" src="https://profile-counter.glitch.me/Beautiful-Report-Card/count.svg" />
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nuoxianCN/Beautiful-Report-Card">
   <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/nuoxianCN/Beautiful-Report-Card/total">
   <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/nuoxianCN/Beautiful-Report-Card/latest/total">
