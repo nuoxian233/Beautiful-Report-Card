@@ -1,9 +1,11 @@
 
+<div align="center">
+  [![](https://img.shields.io/github/repo-size/nuoxianCN/Beautiful-Report-Card)] "文件大小")
+  ![(https://img.shields.io/badge/Author-nuoxianCN-blueviolet "作者")](https://github.com/nuoxiancn/)
+</div>
 <p align="center">
   游客访问：
   <img alt="" src="https://profile-counter.glitch.me/Beautiful-Report-Card/count.svg" />
-  [![](https://img.shields.io/github/repo-size/nuoxianCN/Beautiful-Report-Card)] "文件大小")
-  ![(https://img.shields.io/badge/Author-nuoxianCN-blueviolet "作者")](https://github.com/nuoxiancn/)
   <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/nuoxianCN/Beautiful-Report-Card/latest/total">
   <a href="https://github.com/nuoxianCN/Beautiful-Report-Card/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/nuoxianCN/Beautiful-Report-Card"></a>
   <a href="https://github.com/nuoxianCN/Beautiful-Report-Card/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/nuoxianCN/Beautiful-Report-Card?style=social"></a>
