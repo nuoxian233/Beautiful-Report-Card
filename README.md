@@ -4,7 +4,6 @@
   <a href="https://github.com/nuoxianCN/Beautiful-Report-Card"><img alt="文件大小" src="https://img.shields.io/github/repo-size/nuoxianCN/Beautiful-Report-Card"></a>
   <a href="https://github.com/nuoxianCN/Beautiful-Report-Card/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/nuoxianCN/Beautiful-Report-Card"></a>
   <a href="https://github.com/nuoxianCN/Beautiful-Report-Card/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/nuoxianCN/Beautiful-Report-Card?style=social"></a>
-  <a href="https://github.com/nuoxianCN/Beautiful-Report-Card/network/members"><img alt="Fork数量" src="https://img.shields.io/github/forks/nuoxianCN/Beautiful-Report-Card.svg?style=plastic"></a>
 </p>
 
 ## 学生电子成绩查询系统
@@ -12,10 +11,13 @@
 ### 游客访问
 ![](https://profile-counter.glitch.me/Beautiful-Report-Card/count.svg)
 ### 默认主题
-![](https://s1.328888.xyz/2022/09/03/1Dvpr.png)
-![](https://s1.328888.xyz/2022/09/03/1Ddsj.png)
+![](https://mpimg.cn/view.php/e6c7e09d7f463caa421384a871c2b002.png)
+![](https://mpimg.cn/view.php/2fb50a27410530ce40cf606ab79cd7c3.png)
 ### 微信主题
-![](https://s1.328888.xyz/2022/09/03/1DWTI.png)
+![](https://mpimg.cn/view.php/cbe2b8fdc0c7254cb2c76e6d59548f1b.png)
+![](https://mpimg.cn/view.php/e897469a090a17214f66807ab616d2d5.png)
+### 后台展示
+![](https://mpimg.cn/view.php/b92d74347a3c571abc290f1b8f0efcbd.png)
 ## 全部功能
 ##### 没打勾的说明正在施工(实现)中~
 - [x] 精美的页面
