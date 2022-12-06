@@ -43,7 +43,8 @@
 2. 下载源码解压到站点根目录
 3. 导入`sql/result.sql`至MYSQL
 4. 修改`config.php`的数据库配置信息
-5. 访问站点`http://IP/index.php`
+5. 删除位于`sql/result.sql`的数据库文件
+6. 访问站点`http://IP/index.php`
 ## 目录结构
 ```
 WEB
