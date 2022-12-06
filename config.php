@@ -1,7 +1,7 @@
 <?php
 	$Program_version = "0.0.7"; // 修改系统版本，请不要随意改动
 
-    $host = 'localhost'; // 
+    $host = 'localhost'; // 主机名
 	$username = 'root'; // 数据库登录账号
 	$password = 'root'; // 数据库登录密码
 	$dbname = 'root'; // 数据库的名字

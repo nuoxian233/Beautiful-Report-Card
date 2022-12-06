@@ -83,6 +83,7 @@ WEB
 * QQ：1428309052
 * QQ群：445202136
 ## Ref
+* 功能实现、参考部分：OneIndex
 * 网站图标：https://www.iconfont.cn/collections/detail?cid=18409
 * 前台svg：https://www.iconfont.cn/collections/detail?cid=1245
 * 后台svg：https://www.iconfont.cn/collections/detail?cid=19892
