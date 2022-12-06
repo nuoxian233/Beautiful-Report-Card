@@ -99,7 +99,7 @@
             <li class="mdui-list-item mdui-ripple">
                 <i class="mdui-icon material-icons">&#xe6c4;</i>&nbsp;
                 服务器 MYSQL 版本
-                <div class="mdui-list-item-content mdui-text-right"><?php $link = @mysqli_connect($host,$username,$password,$dbname,$port); printf(substr($link -> server_info,0,6)); ?></div>
+                <div class="mdui-list-item-content mdui-text-right"><?php $link = @mysqli_connect($host,$username,$password,$dbname,$port); if($link){printf(substr($link -> server_info,0,6));}else{echo "无法连接至数据库";}; ?></div>
             </li>
             <a class="mdui-ripple" href="https://ip.sanv.org/index.php?ip=<?php echo $_SERVER['REMOTE_ADDR']; ?>" target="_blank">
                 <li class="mdui-list-item mdui-ripple">

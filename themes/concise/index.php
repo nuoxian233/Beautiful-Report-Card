@@ -96,24 +96,26 @@
                 mysqli_close($link);
             }
 
-            echo "	<div id=\"detail-box\">";
-            echo "		<h1>$name 的成绩单</h1>";
-            echo "		";
-            echo "		<h3>各科分数：</h3>";
-            echo "		<ul>";
-            echo "					<li><span>$Custom_text3</span>$text1</li>";
-            echo "					<li><span>$Custom_text4</span>$text2</li>";
-            echo "					<li><span>$Custom_text5</span>$text3</li>";
-            echo "					<li><span>$Custom_text6</span>$text4</li>";
-            echo "					<li><span>$Custom_text7</span>$text5</li>";
-            echo "					<li><span>$Custom_text8</span>$text6</li>";
-            echo "					<li><span>$Custom_text9</span>$text7</li>";
-            echo "					<li><span>$Custom_text10</span>$text8</li>";
-            echo "					<li><span>$Custom_text11</span>$text9</li>";
-            echo "		</ul>";
-            echo "		<h3>班主任评语：</h3>";
-            echo "		<p>$remarks</p>";
-            echo "	</div>";
+            echo "<div id=\"detail-box\">";
+            echo "<h1>";
+            echo "$name";
+            echo "的成绩单</h1>";
+            echo "";
+            echo "<h3>各科分数：</h3>";
+            echo "<ul>";
+            echo "<li><span>$Custom_text3</span>$text1</li>";
+            echo "<li><span>$Custom_text4</span>$text2</li>";
+            echo "<li><span>$Custom_text5</span>$text3</li>";
+            echo "<li><span>$Custom_text6</span>$text4</li>";
+            echo "<li><span>$Custom_text7</span>$text5</li>";
+            echo "<li><span>$Custom_text8</span>$text6</li>";
+            echo "<li><span>$Custom_text9</span>$text7</li>";
+            echo "<li><span>$Custom_text10</span>$text8</li>";
+            echo "<li><span>$Custom_text11</span>$text9</li>";
+            echo "</ul>";
+            echo "<h3>班主任评语：</h3>";
+            echo "<p>$remarks</p>";
+            echo "</div>";
         }
     ?>
     </body>
