@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-	    <!--
+	<!--
 							.__               
 	____  __ __  _______  __|__|____    ____  
 	/    \|  |  \/  _ \  \/  /  \__  \  /    \ 
@@ -52,58 +52,7 @@ if (!isset($_POST['start'])) {
 	} else {
 		require "./../../config.php";
 
-		$number_api = $_POST['number']; // 获取post过来的内容并存入变量
-		$id_api = $_POST['id']; // 获取post过来的内容并存入变量
-		// 过滤数组
-		$illegal = array('or 1 = 1','||','alert','<','>','<?php','#','`',' '); //过滤的部分内容
-
-		function filter($str, $array_illegal) {
-			foreach ($array_illegal as $value) {
-				if (strstr($str, $value) !== false) {
-					die ("<script>alert('含有敏感词或字符，请重新输入！');location='./'</script>");
-					return true;
-				}
-			}
-			return false;
-		}
-
-		filter($number_api, $illegal);
-		filter($id_api, $illegal);
-
-		if(empty($number_api)) {
-			die ("<script>alert('请输入 考生号/准考证号 后再试！');location='./';</script>");
-		} elseif(empty($id_api)) {
-			die ("<script>alert('请输入 身份证号后六位 后再试！');location='./';</script>");
-		} else {
-			$link = @mysqli_connect($host,$username,$password,$dbname,$port);
-
-			if (!$link) {
-				die ("<script>alert('数据库连接失败，请检查配置文件！');location='./';</script>");
-			}
-		}
-		
-		if($link) {
-			$result = mysqli_query($link,"select * from $SQLtable where number = '$number_api'"); // number 为 数据库表名
-			$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-			
-			if($row['id'] == $id_api && $row['number'] == $number_api) {
-				$number = $row["number"];
-				$name = $row["name"];
-				$text1 = $row["custom_text1"];
-				$text2 = $row["custom_text2"];
-				$text3 = $row["custom_text3"];
-				$text4 = $row["custom_text4"];
-				$text5 = $row["custom_text5"];
-				$text6 = $row["custom_text6"];
-				$text7 = $row["custom_text7"];
-				$text8 = $row["custom_text8"];
-				$text9 = $row["custom_text9"];
-			} else {
-				die ("<script>alert('查询的学生信息不存在！');location='./';</script>");
-			}
-			
-			mysqli_close($link);
-		}
+		require "./../../inc/Query_info.php";
 
 		echo "<div class=\"indexBox\">\n";
 		echo "	<p class=\"indexTitle\">成绩查询结果(<svg t=\"1625342449766\" class=\"iconget\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"1977\" width=\"30\" height=\"30\"><path d=\"M512 76.8c-236.8 0-435.2 192-435.2 435.2s192 435.2 435.2 435.2 435.2-192 435.2-435.2S748.8 76.8 512 76.8z m249.6 320L480 704c-12.8 12.8-38.4 12.8-51.2 0L288 556.8c-12.8-12.8-12.8-38.4 0-51.2 12.8-12.8 38.4-12.8 51.2 0l115.2 115.2L704 339.2c12.8-12.8 38.4-12.8 51.2 0 25.6 12.8 25.6 38.4 6.4 57.6z\" fill=\"#68D279\" p-id=\"1978\"></path><path d=\"M710.4 339.2l-256 281.6-115.2-115.2c-12.8-12.8-38.4-12.8-51.2 0-12.8 12.8-12.8 38.4 0 51.2l147.2 140.8c12.8 12.8 38.4 12.8 51.2 0L768 390.4c12.8-12.8 12.8-38.4 0-51.2-19.2-12.8-44.8-12.8-57.6 0z\" fill=\"#FFFFFF\" p-id=\"1979\"></path></svg>)</p>\n";
