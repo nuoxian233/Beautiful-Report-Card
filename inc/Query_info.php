@@ -5,15 +5,16 @@
     $illegal = array('or 1 = 1','||','alert','<','>','<?php','#','`',' ');
     
     function filter($str, $array_illegal) {
-            foreach ($array_illegal as $value) {
-                if (strstr($str, $value) !== false) {
-                    die ("<script>alert('含有敏感词或字符，请重新输入！');location='./'</script>");
-                    return true;
-                }
+        foreach ($array_illegal as $value) {
+            if (strstr($str, $value) !== false) {
+                die ("<script>alert('含有敏感词或字符，请重新输入！');location='./'</script>");
+                return true;
             }
-                return false;
-            }
+        }
+        return false;
+    }
     
+        // 函数过滤检验是否存在禁止内容
         filter($number_api, $illegal);
         filter($id_api, $illegal);
 

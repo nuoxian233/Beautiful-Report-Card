@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 	<!--
 							.__               
 	____  __ __  _______  __|__|____    ____  
@@ -16,7 +16,7 @@
 		<meta name="viewport" content="user-scalable=0"/>
 		<meta name="description" content="电子成绩查询系统，无需奔波，移动端即可查看自己的成绩，使用更加方便！">
 		<meta name="keywords" content="学生成绩查询,电子成绩单,成绩,学生,成绩系统">
-		<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+		<link href="style.css" type="text/css" rel="stylesheet" />
 	</head>
 <body>
 <?php

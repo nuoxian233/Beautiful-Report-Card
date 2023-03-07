@@ -11,8 +11,10 @@
     -->
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
         <title>电子成绩单</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <meta name="description" content="电子成绩查询系统，无需奔波，移动端即可查看自己的成绩，使用更加方便！">
+		<meta name="keywords" content="学生成绩查询,电子成绩单,成绩,学生,成绩系统">
         <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/weui/2.5.4/style/weui.min.css" type="text/css" rel="stylesheet" />
         <link href="style.css" type="text/css" rel="stylesheet" />
     </head>
@@ -21,9 +23,7 @@
         if (!isset($_POST['start'])) {
     ?>
 	<div style="width: 90%;margin: 130px auto;text-align: center;">
-
 		<h1 style="margin: 10px auto;">电子成绩单</h1>
-
 		<div>
             <form method="POST">
                 <div class="weui-cell">
@@ -38,7 +38,6 @@
                         <input class="weui-input" type="text" name="number" placeholder="请输入学号">
                     </div>
                 </div>
-                
                 <div style="margin: 30px auto;">
                     <input class="weui-btn weui-btn_primary" name="start" type="submit" value="查询">
                     <button class="weui-btn weui-btn_default" type="reset">重置</button>
@@ -46,7 +45,6 @@
             </form>
 		</div>
 	</div>
-	
     <?php
         } else {
             require "./../../config.php";

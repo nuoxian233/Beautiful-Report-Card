@@ -22,31 +22,7 @@
     <script>$ = mdui.$;</script>
 </head>
 <body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-drawer-body-left mdui-appbar-with-toolbar">
-<header class="mdui-appbar mdui-appbar-fixed">
-    <div class="mdui-toolbar mdui-color-black">
-        <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#menu', swipe: true}"><i class="mdui-icon material-icons">menu</i></span>
-        <a href="#" class="mdui-typo-headline mdui-hidden-xs">学生电子成绩管理系统</a>
-        <div class="mdui-toolbar-spacer"></div>
-        <a href="logout.php" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '退出'}"><i class="mdui-icon material-icons">exit_to_app</i></a>
-    </div>
-</header>
-    <div class="mdui-drawer" id="menu">
-        <div class="mdui-list">
-            <br/><br/>
-            <a href="#" class="mdui-list-item">
-                <i class="mdui-menu-item-icon mdui-icon material-icons">help_outline</i>
-                <div class="mdui-list-item-content">关于管理系统</div>
-            </a>
-            <a href="./query.php" class="mdui-list-item">
-                <i class="mdui-menu-item-icon mdui-icon material-icons">face</i>
-                <div class="mdui-list-item-content">查询学生信息</div>
-            </a>
-            <a href="./action/Add.php" class="mdui-list-item">
-                <i class="mdui-menu-item-icon mdui-icon material-icons">library_add</i>
-                <div class="mdui-list-item-content">添加学生信息</div>
-            </a>
-        </div>
-    </div>
+<?php require_once ("component/navbar.php"); ?>
     <div class="mdui-typo" style="text-align: center;">
         <h2>关于我们</h2>
         <p><b>作者：</b><abbr title="作者网站：https://nuoxiana.cn">nuoxian</abbr>（学习，还是学习。做一个知识分子！）</p>
