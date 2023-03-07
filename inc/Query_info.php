@@ -1,8 +1,10 @@
 <?php
     $number_api = $_POST['number'];
     $id_api = $_POST['id'];
-    // 过滤数组
-    $illegal = array('or 1 = 1','||','alert','<','>','<?php','#','`',' ');
+
+    // 读取过滤内容
+    $txt_filter = file_get_contents (__DIR__ . "/filter.txt");
+    $illegal = explode(",",$txt_filter);
     
     function filter($str, $array_illegal) {
         foreach ($array_illegal as $value) {
@@ -17,6 +19,8 @@
         // 函数过滤检验是否存在禁止内容
         filter($number_api, $illegal);
         filter($id_api, $illegal);
+
+        die();
 
         if(empty($number_api)) {
             die ("<script>alert('请输入 考生号/准考证号 后再试！');location='./';</script>");

@@ -1,0 +1,11 @@
+[
+    {"filter":"or 1 = 1"},
+    {"filter":"||"},
+    {"filter":"alert"},
+    {"filter":"<"},
+    {"filter":">"},
+    {"filter":"<?php"},
+    {"filter":"#"},
+    {"filter":"`"},
+    {"filter":" "}
+]
