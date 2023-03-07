@@ -3,9 +3,11 @@
     $id_api = $_POST['id'];
 
     // 读取过滤内容
-    $txt_filter = file_get_contents (__DIR__ . "/filter.txt");
-    $illegal = explode(",",$txt_filter);
-    
+    $json_filter = file_get_contents (__DIR__ . "/filter.json");
+    $json_data = json_decode ($json_filter, true);
+    $words = $json_data['words'];
+    $illegal = $words;
+
     function filter($str, $array_illegal) {
         foreach ($array_illegal as $value) {
             if (strstr($str, $value) !== false) {
@@ -19,8 +21,6 @@
         // 函数过滤检验是否存在禁止内容
         filter($number_api, $illegal);
         filter($id_api, $illegal);
-
-        die();
 
         if(empty($number_api)) {
             die ("<script>alert('请输入 考生号/准考证号 后再试！');location='./';</script>");

@@ -1,11 +1,14 @@
-[
-    {"filter":"or 1 = 1"},
-    {"filter":"||"},
-    {"filter":"alert"},
-    {"filter":"<"},
-    {"filter":">"},
-    {"filter":"<?php"},
-    {"filter":"#"},
-    {"filter":"`"},
-    {"filter":" "}
-]
+{
+    "lastUpdateDate": "2023/03/07 19:09",
+    "words": [
+        "or 1 = 1",
+        "||",
+        "alert",
+        "<",
+        ">",
+        "<?php",
+        "#",
+        "`",
+        " "
+    ]
+}
