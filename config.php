@@ -11,7 +11,7 @@
 	$SQLtable3 = 'result3'; // 选择查询的第四个数据库表
 	$port = 3306; // 数据库地址端口，一般是3306
 
-	$themes = "default"; // 引用的主题目录，在themes可以看到，默认default，还有一个concise主题
+	$themes = "default"; // 引用的主题目录，在themes可以看到，默认default，还有一个wechat主题
 
 	$admin_password = "123456"; // 后台登录的密码
 	
